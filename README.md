@@ -24,7 +24,7 @@ Follow these steps to set up the script:
    # Type exactly as in the example, without extra characters after "="!
 
    API_KEY=alskjdlasjdlkajsdlkjasdlajsdklalksjdlaksjd
-   API_SECRE=Talskjdlasjdlkajsdlkjasdlajsdklalksjdlaksjd
+   API_SECRET=Talskjdlasjdlkajsdlkjasdlajsdklalksjdlaksjd
    ```
 
 3. \*\* Add Wallet Addresses
