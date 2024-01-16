@@ -94,7 +94,6 @@ async function withdrawTokens(
 
   try {
     const resp = await axios(config);
-    console.log("Response:", resp);
     console.log("Response Status:", resp.status);
     console.log("Response Data:", resp.data);
   } catch (error) {
