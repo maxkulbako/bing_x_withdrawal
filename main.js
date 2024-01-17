@@ -36,9 +36,12 @@ async function main() {
   for (const address of wallets) {
     if (address == "") throw new Error("Add wallets to txt file");
 
-    const amount = Math.random() * (maxAmount - minAmount) + minAmount;
+    const amount = Math.floor(
+      Math.random() * (maxAmount - minAmount + 1) + minAmount
+    );
+    console.log(amount);
+    API.payload.amount = amount.toString();
     API.payload.address = address;
-    API.payload.amount = amount.toFixed(2);
 
     await withdrawTokens(
       API.protocol,
